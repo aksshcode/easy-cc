@@ -1,0 +1,31 @@
+[     284ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[     362ms] [LOG] [HMR] connected @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[     641ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[     674ms] [LOG] [Fast Refresh] done in 135ms @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   13765ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   13811ms] [LOG] [Fast Refresh] done in 148ms @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   31309ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   31352ms] [LOG] [Fast Refresh] done in 142ms @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   52834ms] [LOG] [dbg] pump id=2 origSum=2875598 copySum=2875598 origByteLen=147456 adj={"saturation":100,"gamma":100,"tone":40} @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   52836ms] [LOG] [dbg][worker] adj= {"saturation":100,"gamma":100,"tone":40} keys= saturation,gamma,tone @ blob:http://localhost:3210/49d1247f-da44-499a-9d66-29146142fb47:4
+[   52837ms] [LOG] [dbg] posted; origByteLen after=147456 @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   52837ms] [LOG] [dbg][worker] inv= 1 s= 1 shift= 18 lut128= 128 pxIn= 0 0 128 @ blob:http://localhost:3210/49d1247f-da44-499a-9d66-29146142fb47:8
+[   53092ms] [LOG] [dbg] pump id=3 origSum=2875598 copySum=2875598 origByteLen=147456 adj={"saturation":100,"gamma":100,"tone":41} @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   53094ms] [LOG] [dbg][worker] adj= {"saturation":100,"gamma":100,"tone":41} keys= saturation,gamma,tone @ blob:http://localhost:3210/49d1247f-da44-499a-9d66-29146142fb47:4
+[   53094ms] [LOG] [dbg][worker] inv= 1 s= 1 shift= 18.45 lut128= 128 pxIn= 0 0 128 @ blob:http://localhost:3210/49d1247f-da44-499a-9d66-29146142fb47:8
+[   53095ms] [LOG] [dbg] posted; origByteLen after=147456 @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  115424ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  115435ms] [LOG] [dbg] pump id=4 origSum=2875598 copySum=2875598 origByteLen=147456 adj={"saturation":100,"gamma":100,"tone":41} @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  115438ms] [LOG] [dbg] posted; origByteLen after=147456 @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  115450ms] [LOG] [dbg][worker] adj= {"saturation":100,"gamma":100,"tone":41} keys= saturation,gamma,tone @ blob:http://localhost:3210/68681d9d-d7ce-4222-a0ec-fdc20306c03d:4
+[  115451ms] [LOG] [dbg][worker] inv= 1 s= 1 shift= 18.45 lut128= 128 pxIn= 0 0 128 @ blob:http://localhost:3210/68681d9d-d7ce-4222-a0ec-fdc20306c03d:8
+[  115451ms] [LOG] [Fast Refresh] done in 101ms @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  115483ms] [LOG] [dbg][worker] done len= 147456 sumOut= 0 zeroPx= 10000 / 10000 pxOut= 0 0 0 @ blob:http://localhost:3210/68681d9d-d7ce-4222-a0ec-fdc20306c03d:16
+[  119795ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  121240ms] [LOG] [dbg] pump id=5 origSum=2875598 copySum=2875598 origByteLen=147456 adj={"saturation":100,"gamma":100,"tone":41} @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  121247ms] [LOG] [dbg] posted; origByteLen after=147456 @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  121250ms] [LOG] [Fast Refresh] done in 1525ms @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  121265ms] [LOG] [dbg][worker] adj= {"saturation":100,"gamma":100,"tone":41} keys= saturation,gamma,tone @ blob:http://localhost:3210/ad272bf9-09ca-44ad-94d4-a98b8174d22b:4
+[  121265ms] [LOG] [dbg][worker] inv= 1 s= 1 shift= 18.45 lut128= 128 pxIn= 0 0 128 @ blob:http://localhost:3210/ad272bf9-09ca-44ad-94d4-a98b8174d22b:8
+[  121292ms] [LOG] [dbg][worker] done len= 147456 sumOut= 0 zeroPx= 10000 / 10000 pxOut= 0 0 0 @ blob:http://localhost:3210/ad272bf9-09ca-44ad-94d4-a98b8174d22b:16
+[  121296ms] [LOG] [dbg] recv id=5 len=147456 sum=0 zeros=10000 byteLen=147456 @ http://localhost:3210/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477

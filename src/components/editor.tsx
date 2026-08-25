@@ -2,10 +2,9 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
-import { process, type Adjustments } from "@/lib/color";
+import { DEFAULTS, process, WORKER_JS, type Adjustments } from "@/lib/color";
 
 const MAX_PREVIEW = 2048;
-const DEFAULTS: Adjustments = { saturation: 100, gamma: 100, tone: 0 };
 
 export default function Editor({
   file,
@@ -37,11 +36,18 @@ export default function Editor({
     busyRef.current = true;
     pendingRef.current = null;
     reqIdRef.current += 1;
-    worker.postMessage({ id: reqIdRef.current, pixels: original, adj: next });
+    const copy = new Uint8ClampedArray(original);
+    worker.postMessage({ id: reqIdRef.current, pixels: copy, adj: next }, [
+      copy.buffer,
+    ]);
   }, []);
 
   useEffect(() => {
-    const worker = new Worker(new URL("./cc.worker.ts", import.meta.url));
+    const blobUrl = URL.createObjectURL(
+      new Blob([WORKER_JS], { type: "text/javascript" })
+    );
+    const worker = new Worker(blobUrl);
+    URL.revokeObjectURL(blobUrl);
     worker.onmessage = (
       e: MessageEvent<{ id: number; out: Uint8ClampedArray<ArrayBuffer> }>
     ) => {

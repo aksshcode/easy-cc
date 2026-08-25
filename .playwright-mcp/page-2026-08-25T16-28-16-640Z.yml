@@ -1,0 +1,47 @@
+- generic [active] [ref=f12e1]:
+  - generic [ref=f12e3]:
+    - banner [ref=f12e4]:
+      - generic [ref=f12e5]:
+        - generic [ref=f12e6]: "[easy cc]"
+        - link "How it works" [ref=f12e7] [cursor=pointer]:
+          - /url: "#how"
+    - main [ref=f12e8]:
+      - generic [ref=f12e12]:
+        - generic [ref=f12e13]: 100% local — nothing ever gets uploaded
+        - heading "Perfect colors. Zero effort." [level=1] [ref=f12e14]
+        - paragraph [ref=f12e15]: Drop a photo and tune saturation, gamma and color tone with three sliders. Fast, private, done in your browser.
+        - generic [ref=f12e16] [cursor=pointer]:
+          - button "Drop an image anywhere or click to browse · PNG · JPG · WebP" [ref=f12e17]
+          - generic [ref=f12e21]: Drop an image anywhere
+          - generic [ref=f12e22]: or click to browse · PNG · JPG · WebP
+      - generic [ref=f12e24]:
+        - heading "Three steps. No accounts." [level=2] [ref=f12e25]
+        - generic [ref=f12e26]:
+          - generic [ref=f12e27]:
+            - generic [ref=f12e28]: "1"
+            - heading "Drop your photo" [level=3] [ref=f12e29]
+            - paragraph [ref=f12e30]: Drag it anywhere on this page.
+          - generic [ref=f12e31]:
+            - generic [ref=f12e32]: "2"
+            - heading "Slide to taste" [level=3] [ref=f12e33]
+            - paragraph [ref=f12e34]: Saturation, gamma and tone — live preview.
+          - generic [ref=f12e35]:
+            - generic [ref=f12e36]: "3"
+            - heading "Export full-res" [level=3] [ref=f12e37]
+            - paragraph [ref=f12e38]: Download a PNG at original quality.
+      - generic [ref=f12e39]:
+        - heading "All the control you need" [level=2] [ref=f12e40]
+        - generic [ref=f12e41]:
+          - generic [ref=f12e42]:
+            - heading "Saturation" [level=3] [ref=f12e43]
+            - paragraph [ref=f12e44]: From muted to vivid — push color as far as you want without wrecking skin tones.
+          - generic [ref=f12e45]:
+            - heading "Gamma" [level=3] [ref=f12e46]
+            - paragraph [ref=f12e47]: Lift shadows or tame highlights to recover detail your camera buried.
+          - generic [ref=f12e48]:
+            - heading "Color tone" [level=3] [ref=f12e49]
+            - paragraph [ref=f12e50]: Warm it up for golden hour, cool it down for that clean, modern look.
+    - contentinfo [ref=f12e51]:
+      - paragraph [ref=f12e52]: © 2026 [easy cc] — your photos never leave your device.
+  - button "Open Next.js Dev Tools" [ref=f12e58] [cursor=pointer]
+  - alert [ref=f12e62]

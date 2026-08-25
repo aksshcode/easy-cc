@@ -1,0 +1,30 @@
+- generic [active] [ref=f7e1]:
+  - button "Open Next.js Dev Tools" [ref=f7e59] [cursor=pointer]
+  - alert [ref=f7e53]
+  - generic [ref=f7e147]:
+    - banner [ref=f7e148]:
+      - generic [ref=f7e149]:
+        - button "[easy cc]" [ref=f7e150]
+        - generic [ref=f7e153]: test.png
+    - main [ref=f7e154]:
+      - complementary [ref=f7e157]:
+        - paragraph [ref=f7e158]: Live preview capped at 2048px — exports at full size.
+        - generic [ref=f7e159]:
+          - generic [ref=f7e160]:
+            - generic [ref=f7e161]: Saturation
+            - generic [ref=f7e162]: 100%
+          - slider [ref=f7e163] [cursor=pointer]: "100"
+        - generic [ref=f7e164]:
+          - generic [ref=f7e165]:
+            - generic [ref=f7e166]: Gamma
+            - generic [ref=f7e167]: "1.00"
+          - slider [ref=f7e168] [cursor=pointer]: "100"
+        - generic [ref=f7e169]:
+          - generic [ref=f7e170]:
+            - generic [ref=f7e171]: Color tone
+            - generic [ref=f7e172]: "0"
+          - slider [ref=f7e173] [cursor=pointer]: "0"
+        - generic [ref=f7e174]:
+          - button "Show original" [ref=f7e175]
+          - button "Reset" [ref=f7e176]
+        - button "Download PNG" [ref=f7e177]

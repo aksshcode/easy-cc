@@ -22,12 +22,14 @@ require breaking one, STOP and ask instead of improvising.**
 3. **Color math lives in exactly one place:** `src/lib/color.ts`. It is imported by
    BOTH the worker and the full-res export path. Never duplicate or fork this logic;
    if the math changes, it changes there only, or preview and export will diverge.
-4. **Do not modify the worker protocol** in `src/components/cc.worker.ts` +
-   `src/components/editor.tsx` unless explicitly asked. It is race-hardened:
-   - main thread never transfers buffers (structured-clone copies only)
+4. **Do not modify the worker protocol** in `src/components/editor.tsx` +
+   `src/lib/color.ts` (WORKER_JS) unless explicitly asked. It is race-hardened:
+   - the worker is a BLOB built from the WORKER_JS string in color.ts — do NOT
+     switch back to `new Worker(new URL(...))`; Turbopack's dev worker bootstrap
+     corrupts typed-array messages after the first one
    - requests are matched by monotonic `reqIdRef`; stale responses are discarded
    - one in-flight job max; latest pending adjustment wins (`pendingRef` + `busyRef`)
-   Naive "simplifications" here reintroduced black-frame bugs before. Leave it alone.
+   - WORKER_JS must mirror `process()` EXACTLY or preview/export diverge
 5. **Mobile-first design.** Base styles are for phones (large touch targets,
    min-h-11/min-h-12 buttons). Desktop enhancements go behind `lg:` breakpoints.
 6. **Don't touch** `src/components/ui/*`, `src/hooks/*`, `components.json`,
@@ -49,8 +51,7 @@ require breaking one, STOP and ask instead of improvising.**
 | `src/app/page.tsx` | Client shell: AnimatePresence switch between Landing ↔ Editor, owns selected File state |
 | `src/components/landing.tsx` | SaaS landing page; window-wide drag&drop capture; framer-motion animations |
 | `src/components/editor.tsx` | Editor UI; owns Worker lifecycle, slider state, canvas rendering, full-res export |
-| `src/components/cc.worker.ts` | Off-main-thread pixel processing; receives cloned pixels + adjustments, returns processed clone |
-| `src/lib/color.ts` | THE color math (gamma LUT, saturation, tone shift) shared by worker + export |
+| `src/lib/color.ts` | THE color math (gamma LUT, saturation, tone shift) shared by worker + export; also hosts the WORKER_JS blob source |
 | `src/app/layout.tsx` | Root layout + metadata ("[easy cc]") |
 
 ## Data flow
